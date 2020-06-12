@@ -1,1 +1,7 @@
 buildPack: javascript
+pipelineConfig:
+  pipelines:
+    release:
+      build:
+        preSteps:
+        - command: nvm install 12.0.0
