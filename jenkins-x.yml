@@ -173,6 +173,10 @@ pipelineConfig:
             dir: /workspace/source
             image: nodejs12x
             name: yarn-install
+          - command: yarn install
+            dir: /workspace/source
+            image: nodejs12x
+            name: yarn-install-2
           - command: yarn docker-build
             dir: /workspace/source
             image: nodejs12x
