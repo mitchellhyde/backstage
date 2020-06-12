@@ -73,10 +73,6 @@ pipelineConfig:
             dir: /workspace/source
             image: nodejs12x
             name: build-npm-install
-          - command: CI=true DISPLAY=:99 npm test
-            dir: /workspace/source
-            image: nodejs12x
-            name: build-npm-test
           - args:
             - --cache=true
             - --cache-dir=/workspace
@@ -169,10 +165,6 @@ pipelineConfig:
             dir: /workspace/source
             image: nodejs12x
             name: build-npm-install
-          - command: CI=true DISPLAY=:99 npm test
-            dir: /workspace/source
-            image: nodejs12x
-            name: build-npm-test
           - args:
             - --cache=true
             - --cache-dir=/workspace
