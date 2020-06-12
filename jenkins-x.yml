@@ -165,6 +165,10 @@ pipelineConfig:
             dir: /workspace/source
             image: nodejs12x
             name: build-npm-install
+          - command: pwd && ls -al
+            dir: /workspace/source
+            image: nodejs12x
+            name: pwd
           - args:
             - --cache=true
             - --cache-dir=/workspace
