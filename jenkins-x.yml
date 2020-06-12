@@ -1,7 +1,1 @@
 buildPack: javascript
-pipelineConfig:
-  pipelines:
-    release:
-      build:
-        preSteps:
-        - command: npm -v && npm cache clean -f && npm install -g n && n 12.0.0 && PATH="$PATH"
