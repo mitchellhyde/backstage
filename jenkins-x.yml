@@ -1,3 +1,7 @@
 buildPack: javascript
-agent:
-  image: node:latest
+pipelineConfig:
+  pipelines:
+    release:
+      pipeline:
+        agent:
+          image: "node:latest"
