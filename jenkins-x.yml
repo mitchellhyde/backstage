@@ -177,10 +177,10 @@ pipelineConfig:
             dir: /workspace/source
             image: nodejs12x
             name: yarn-install-2
-          - command: yarn docker-build
+          - command: yarn bundle
             dir: /workspace/source
             image: nodejs12x
-            name: docker-build
+            name: yarn-bundle
           - args:
             - --cache=true
             - --cache-dir=/workspace
