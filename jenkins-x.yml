@@ -4,4 +4,4 @@ pipelineConfig:
     release:
       build:
         preSteps:
-        - command: npm -v
+        - command: npm -v && sudo npm cache clean -f && sudo npm install -g n && sudo n stable
